@@ -1,4 +1,5 @@
 Class = require("lib.vendor.middle-class")
+Entities = require("lib.entities")
 
 function love.load()
     
