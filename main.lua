@@ -1,3 +1,4 @@
+Class = require("lib.vendor.middle-class")
 
 function love.load()
     
