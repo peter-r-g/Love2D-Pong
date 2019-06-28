@@ -1,6 +1,7 @@
 local Print = {}
 
 Print.TYPE_DEFAULT = "[gEngine] "
+Print.TYPE_INFO    = "[gInfo] "
 Print.TYPE_WARNING = "[gWarning] "
 Print.TYPE_ERROR   = "[gError] "
 
