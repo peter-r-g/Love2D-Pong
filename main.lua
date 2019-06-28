@@ -5,10 +5,10 @@ Events.Listen("Load", "Pong.Load", function()
 end)
 
 Events.Listen("Update", "Pong.Update", function(dt)
-    --print("Game updating... (" .. dt .. ")")
+    --Print("Game updating... (" .. dt .. ")")
 end)
 
 Events.Listen("Draw", "Pong.Draw", function()
-    --print("Game drawing...")
+    --Print("Game drawing...")
     love.graphics.print(love.timer.getFPS() .. "FPS", 5, 5)
 end)
