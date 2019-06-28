@@ -32,12 +32,24 @@ end
 
 function sceneManager:Update(dt)
     if self.activeScene then
+        for _, entity in pairs(self.entities) do
+            entity:Update(dt)
+        end
+        for _, uiEntitty in pairs(self.uiEntities) do
+            uiEntity:Update(dt)
+        end
         self.activeScene:Update(dt)
     end
 end
 
 function sceneManager:Draw()
     if self.activeScene then
+        for _, entity in pairs(self.entities) do
+            entity:Draw()
+        end
+        for _, uiEntitty in pairs(self.uiEntities) do
+            uiEntity:Draw()
+        end
         self.activeScene:Draw()
     end
 end
